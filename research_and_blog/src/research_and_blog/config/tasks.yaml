@@ -1,0 +1,15 @@
+report_task:
+  description: >
+    Based on the topic: {topic}, generate a detailed report including all the latest research findings, facts, and data.
+    the report should be around 1500 words.
+  expected_output: >
+    A comprehensive report on {topic} covering historical context, current trends, challenges, opportunities, and future outlook.
+  agent: report_generator
+
+blog_writing_task:
+  description: >
+    Based on the topic: {topic}, write an engaging and informative blog post.
+    the blog post should be around 800 words.
+  expected_output: >
+    An engaging blog post on {topic} that is fun to read, highly informative, and well-structured covering various aspects of the topic.
+  agent: blog_writer
