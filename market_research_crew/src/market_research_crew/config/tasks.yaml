@@ -1,0 +1,159 @@
+market_resear_task:
+  description: >
+    Conduct compreshensive market research for the AI product idea:{product_idea}.
+
+    Your Analysis mush include:
+    1. Market Size and Growth:
+     - Estimate the current market size for the AI product idea and project its growth over the next 5 years.
+     - Identify key market segments and their potential.
+     - Analyze market trends and drivers influencing the AI product idea.
+
+    2. Industry Trends and Dynamics:
+      - Examine current industry trends relevant to the AI product idea.
+      - Identify emerging technologies and innovations that could impact the market.
+      - Analyze regulatory and economic factors affecting the industry.
+    
+    3.Regulation Landscape:
+      - Identify key regulations and compliance requirements affecting the AI product idea.
+      - Analyze potential regulatory changes and their implications for market entry and growth.
+      - Assess the impact of data privacy laws on the AI product idea.
+      - Evaluate industry standards and best practices relevant to the AI product idea.
+
+    4. Technology Readiness:
+      - Assess the current state of technology related to the AI product idea.
+      - Identify technological advancements that could enhance or disrupt the market.
+      - Evaluate the readiness of the market to adopt the AI product idea.
+      - Analyze potential barriers to technology adoption and strategies to overcome them.
+
+  expected_output: >
+    A detailed market research report covering the aspects mentioned above, 
+    providing insights and data to inform the development and launch of the AI product idea.
+  agent: market_research_specialist
+
+competitive_inteligence_task:
+  description: >
+    Conduct a thorough competitive analysis for the AI product idea:{product_idea}.
+
+    Your Analysis must include:
+    1. Competitor Identification:
+      - Identify key competitors offering similar AI products or services.
+      - Analyze their market positioning, target audience, and unique selling propositions.
+
+    2. SWOT Analysis:
+      - Conduct a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) for each major competitor.
+      - Identify areas where competitors excel and where they are vulnerable.
+
+    3. Market Share and Performance:
+      - Estimate the market share of key competitors.
+      - Analyze their financial performance, growth rates, and market strategies.
+
+    4. Competitive Strategies:
+      - Examine the marketing, pricing, and distribution strategies employed by competitors.
+      - Identify any partnerships, alliances, or collaborations that enhance their market position.
+
+    5. Future Outlook:
+      - Assess potential future moves by competitors based on current trends and market conditions.
+      - Identify emerging competitors and potential disruptors in the AI product space.
+
+  expected_output: >
+    A comprehensive competitive analysis report detailing the competitive landscape,
+    strengths and weaknesses of key players, and strategic insights for positioning 
+    the AI product idea effectively in the market.
+  agent: competitive_inteligence_analyst
+
+customer_insights_task:
+  description: >
+    Conduct customer insights research for the AI product idea:{product_idea}.
+
+    Your Research must include:
+    1. Customer Segmentation:
+      - Identify and define key customer segments relevant to the AI product idea.
+      - Analyze demographic, psychographic, and behavioral characteristics of each segment.
+
+    2. Customer Needs and Preferences:
+      - Gather data on customer needs, preferences, and pain points related to the AI product idea.
+      - Identify features and functionalities that customers value most.
+
+    3. Feedback Collection:
+      - Design and implement surveys, interviews, or focus groups to collect customer feedback.
+      - Analyze qualitative and quantitative data to extract meaningful insights.
+
+    4. Buying Behavior:
+      - Study customer buying behavior and decision-making processes for similar AI products.
+      - Identify factors influencing purchase decisions, such as price sensitivity, brand loyalty, and product features.
+
+    5. Market Demand:
+      - Assess the overall market demand for the AI product idea based on customer insights.
+      - Identify potential barriers to adoption and strategies to overcome them.
+  expected_output: >
+    A detailed customer insights report highlighting key customer segments, needs,
+    preferences, and feedback to guide the development and marketing of the AI product idea.
+  agent: customer_insights_researcher
+
+product_strategy_task:
+  description: >  
+    Develop a strategic plan for the AI product idea:{product_idea} based on market research 
+    and competitive analysis.
+
+    Your Strategy must include:
+    1. Product Positioning:
+      - Define the unique value proposition of the AI product idea.
+      - Identify target customer segments and positioning strategies to differentiate the product in the market.
+
+    2. Go-to-Market Strategy:
+      - Develop a comprehensive go-to-market strategy, including marketing, sales, and distribution plans.
+      - Identify key channels and tactics to reach target customers effectively.
+
+    3. Pricing Strategy:
+      - Analyze pricing models and strategies suitable for the AI product idea.
+      - Recommend pricing structures that align with market conditions and customer willingness to pay.
+
+    4. Roadmap and Milestones:
+      - Create a product development roadmap with key milestones and timelines.
+      - Identify critical success factors and potential risks associated with the product launch.
+
+    5. Resource Allocation:
+      - Assess resource requirements, including budget, personnel, and technology needs.
+      - Develop a plan for resource allocation to support product development and launch activities.  
+  expected_output: >
+    A comprehensive product strategy document outlining the positioning, go-to-market
+    strategy, pricing, roadmap, and resource allocation for the AI product idea.
+  agent: product_strategy_advisor
+
+  business_analysis_task:
+  description: >
+    Synthesize all research findings into a comprehensive business analysis report 
+    for the AI product idea:{product_idea}.
+
+    Your Report must include:
+    1. Executive Summary:
+      - Provide a concise overview of the AI product idea, market opportunity, and key findings from the research.
+
+    2. Market Analysis:
+      - Summarize market size, growth projections, industry trends, and regulatory landscape.
+      - Highlight key insights from the market research report.
+
+    3. Competitive Analysis:
+      - Present a summary of the competitive landscape, including SWOT analysis and market share of key competitors.
+      - Identify strategic opportunities and threats based on competitive intelligence.
+
+    4. Customer Insights:
+      - Summarize key customer segments, needs, preferences, and feedback.
+      - Highlight implications for product development and marketing strategies.
+
+    5. Financial Projections:
+      - Develop pricing strategy, revenue projections, and cost estimates for the AI product idea.
+      - Create financial models to assess profitability and return on investment.
+
+    6. Go-to-Market Strategy:
+      - Outline the go-to-market strategy, including marketing, sales, and distribution plans.
+      - Identify key milestones and timelines for product launch.
+
+    7. Recommendations:
+      - Provide actionable recommendations for product development, market entry, and growth strategies.
+      - Highlight potential risks and mitigation strategies.
+  expected_output: >
+    A comprehensive business analysis report that synthesizes market research,
+    competitive analysis, customer insights, financial projections, and go-to-market strategy 
+    for the AI product idea.
+  agent: business_analyst
