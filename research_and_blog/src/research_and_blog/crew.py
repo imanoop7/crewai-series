@@ -4,7 +4,9 @@ from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List, ClassVar
 from pydantic import ConfigDict
 from pathlib import Path
+from .tools.custom_tool import custom_search
 
+tools = [custom_search] 
 
 @CrewBase
 class ResearchAndBlogCrew():
@@ -17,13 +19,15 @@ class ResearchAndBlogCrew():
 	@agent
 	def report_generator(self) -> Agent:
 		return Agent(
-			config = self.agents_config['report_generator']
+			config = self.agents_config['report_generator'],
+			tools = tools
 		)
 
 	@agent
 	def blog_writer(self) -> Agent:
 		return Agent(
-			config = self.agents_config['blog_writer']
+			config = self.agents_config['blog_writer'],
+			tools = tools
 		)
 	
 	# to define tasks, order needs to be maintained because order of task matters.
