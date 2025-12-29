@@ -4,7 +4,7 @@ mcp = FastMCP("Research Tools")
 
 
 @mcp.tool()
-def format_blog_post(title: str, content: str, author: str = "AK with the help of Gemini Model", tags: str = "") -> str:
+def format_blog_post(title: str, content: str, author: str = "", tags: str = "") -> str:
     """Format content as a blog post with metadata"""
     from datetime import datetime
     
