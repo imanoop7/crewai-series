@@ -5,9 +5,11 @@ description = "research_and_blog using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<=3.13"
 dependencies = [
-    "crewai[tools]>=0.79.4,<1.0.0",
+    "crewai-tools[mcp]>=0.76.0",
+    "crewai[google-genai,tools]>=1.7.1",
     "ddgs>=9.10.0",
     "duckduckgo-search>=8.1.1",
+    "fastmcp<2.0.0",
     "google-generativeai>=0.8.6",
 ]
 
