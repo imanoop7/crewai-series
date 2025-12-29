@@ -14,5 +14,3 @@ def custom_search(query:str) -> str:
     print(results_str)
     return results_str
 
-# custom_search()
-
