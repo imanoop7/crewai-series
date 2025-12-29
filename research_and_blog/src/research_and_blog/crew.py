@@ -5,8 +5,16 @@ from typing import List, ClassVar
 from pydantic import ConfigDict
 from pathlib import Path
 from .tools.custom_tool import custom_search
+from crewai.mcp import MCPServerStdio
+import os
 
-tools = [custom_search] 
+tools = [custom_search]
+
+# MCP server config for STDIO
+mcp_server = MCPServerStdio(
+	command="python",
+	args=["src/research_and_blog/tools/mcp_tools.py"],
+)
 
 @CrewBase
 class ResearchAndBlogCrew():
@@ -20,14 +28,16 @@ class ResearchAndBlogCrew():
 	def report_generator(self) -> Agent:
 		return Agent(
 			config = self.agents_config['report_generator'],
-			tools = tools
+			# tools = tools
 		)
 
 	@agent
 	def blog_writer(self) -> Agent:
 		return Agent(
 			config = self.agents_config['blog_writer'],
-			tools = tools
+			# tools = tools,
+			mcps=[mcp_server],
+			verbose=True
 		)
 	
 	# to define tasks, order needs to be maintained because order of task matters.
